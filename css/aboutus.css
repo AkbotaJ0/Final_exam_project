@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2A3F92;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.language-switcher a,
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.welcome-text {
+    font-size: 50px;
+    color: #002550;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-box {
+    background-color: #D3E2F3;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #002550;
+}
+
+.founder-box {
+    background-color: #B8D2F2;
+    padding: 20px;
+    color: #002550;
+}
+
+.founder-photo {
+    width: 300px;
+    max-width: 300px;
+    border-radius: 5%;
+}
+
+footer {
+    background-color: #4F7FB6;
+    color: white;
+    padding: 30px 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 40px;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.founder-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+}
+
+.custom-navbar {
+    background-color: transparent !important;
+  }
+.custom-navbar .custom-nav-link, .custom-navbar .custom-navbar-brand, .custom-navbar .custom-navbar-toggler-icon {
+    color: white !important;
+  }
+.custom-dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+.custom-dropdown-item {
+    color: black !important;
+  }
+.custom-dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
