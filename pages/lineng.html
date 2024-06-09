@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Algebra</title>
+    <link rel="icon" href="../image/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/lin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="linkaz.html">қаз</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="lin.html">рус</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="lineng.html">eng</a>
+                </li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+                <button class="navbar-toggler custom-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="custom-navbar-toggler-icon navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link custom-nav-link" href="mathmagiceng.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link custom-nav-link" href="aboutuseng.html">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle custom-nav-link" href="courseeng.html" id="customNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Courses
+                            </a>
+                            <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="customNavbarDropdown">
+                                <a class="dropdown-item custom-dropdown-item" href="enteng.html">School Mathematics (UNT)</a>
+                                <a class="dropdown-item custom-dropdown-item" href="calc1eng.html">Mathematical Analysis 1</a>
+                                <a class="dropdown-item custom-dropdown-item" href="calc2eng.html">Mathematical Analysis 2</a>
+                                <a class="dropdown-item custom-dropdown-item" href="lineng.html">Linear Algebra</a>
+                                <a class="dropdown-item custom-dropdown-item" href="diseng.html">Discrete Mathematics</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="regeng.html">Register for the Course</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-5 pt-5">
+        <h1 class="logo"><a href="mathmagic.html">MathMagic</a></h1>
+        <h1 class="title">Linear Algebra</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="course-description">
+                    The course <b>"Linear Algebra"</b> is designed for students of mathematical, technical, and natural science specialties. The program covers the basic concepts and methods of linear algebra, which form the foundation for many areas of mathematics and its applications. The main goal of the course is to provide students with solid knowledge and skills in working with linear structures that are necessary for solving practical problems in various fields of science and technology.
+                </p>
+                <p class="course-content">Course Content</p>
+                <div class="content-box" data-toggle="collapse" data-target="#intro">Introduction</div>
+                <div id="intro" class="collapse">
+                    <p class="collapse-content">- Introduction to linear algebra.<br>- Basic concepts: scalar, vector, matrix.<br>- Applications of linear algebra.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#vectors">Vectors and Vector Spaces</div>
+                <div id="vectors" class="collapse">
+                    <p class="collapse-content">- Vectors and operations on them.<br>- Linear combinations, linear dependence and independence.<br>- Bases and dimensions.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#matrices">Matrices</div>
+                <div id="matrices" class="collapse">
+                    <p class="collapse-content">- Basic operations on matrices.<br>- Types of matrices: square, zero, identity, diagonal.<br>- Transposition of matrices.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#determinants">Determinants</div>
+                <div id="determinants" class="collapse">
+                    <p class="collapse-content">- Determinant of a matrix: concept and properties.<br>- Method of calculating determinants.<br>- Minors and cofactors.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#inverse-matrices">Inverse Matrices</div>
+                <div id="inverse-matrices" class="collapse">
+                    <p class="collapse-content">- Inverse matrix: definition and properties.<br>- Gauss-Jordan method for finding the inverse matrix.<br>- Applications of inverse matrices.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#linear-systems">Systems of Linear Equations</div>
+                <div id="linear-systems" class="collapse">
+                    <p class="collapse-content">- Solving systems of linear equations.<br>- Gauss method.<br>- Matrix method for solving systems of equations.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#matrix-rank">Matrix Rank</div>
+                <div id="matrix-rank" class="collapse">
+                    <p class="collapse-content">- Matrix rank: definition and properties.<br>- Methods of finding the rank of a matrix.<br>- Application of rank for analyzing systems of equations.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#linear-transformations">Linear Transformations</div>
+                <div id="linear-transformations" class="collapse">
+                    <p class="collapse-content">- Linear transformations: concept and examples.<br>- Matrices of linear transformations.<br>- Composition of linear transformations.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#euclidean-spaces">Euclidean Spaces</div>
+                <div id="euclidean-spaces" class="collapse">
+                    <p class="collapse-content">- Euclidean space: definition and properties.<br>- Scalar product.<br>- Orthogonality and orthonormal bases.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#eigenvalues">Eigenvalues and Eigenvectors</div>
+                <div id="eigenvalues" class="collapse">
+                    <p class="collapse-content">- Eigenvalues and eigenvectors: definition.<br>- Method of finding eigenvalues and eigenvectors.<br>- Diagonalization of matrices.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#orthogonal-transformations">Orthogonal Transformations</div>
+                <div id="orthogonal-transformations" class="collapse">
+                    <p class="collapse-content">- Orthogonal and unitary matrices.<br>- Properties of orthogonal transformations.<br>- Applications of orthogonal transformations.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#review">Review and Exam Preparation</div>
+                <div id="review" class="collapse">
+                    <p class="collapse-content">- Overview of key concepts.<br>- Solving typical problems.<br>- Answering students' questions.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-box">
+                    <p><b>Class Schedule</b>
+                        <br>- Regular classes (2-3 times a week)
+                        <br>- Homework assignments to reinforce material
+                        <br>- Conducting mock tests at the end of each module
+                    </p>
+                    <p><b>Learning Format:</b>
+                        <br>- Lectures with theoretical material.
+                        <br>- Practical classes with problem solving.
+                        <br>- Homework assignments for independent work.
+                        <br>- Tests and quizzes to check understanding of material.
+                        <br>- Individual consultations with the instructor.
+                    </p>
+                    <p><b>Learning Outcomes:</b>
+                        <br>- Students will master the basic concepts and methods of linear algebra.
+                        <br>- Learn to solve systems of linear equations and apply matrix methods.
+                        <br>- Be able to perform operations with vectors and matrices.
+                        <br>- Be able to apply theoretical knowledge to solve practical problems in various fields of science and technology.
+                    </p>
+                    <a href="regeng.html" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-logo">MathMagic</h2>
+                    <p>Contacts</p>
+                    <p>87066435627</p>
+                    <p>87066435628</p>
+                    <p><a href="mailto:MathMagic@gmail.com">MathMagic@gmail.com</a></p>
+                    <p>City of Astana</p>
+                    <p>Kabanbay Batyr 60a/1</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Course Mission</h2>
+                    <p>To inspire students to explore and understand the fascinating world of mathematics through quality education and practice.</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Working Hours</h2>
+                    <p>MON: 9:00 - 20:00</p>
+                    <p>TUE: 9:00 - 20:00</p>
+                    <p>WED: 9:00 - 20:00</p>
+                    <p>THU: 9:00 - 20:00</p>
+                    <p>FRI: 9:00 - 20:00</p>
+                    <p>SAT: 10:00 - 18:00</p>
+                    <p>SUN: Closed</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

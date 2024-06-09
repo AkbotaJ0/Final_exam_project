@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Algebra</title>
+    <link rel="icon" href="../image/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/lin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="linkaz.html">қаз</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="lin.html">рус</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lineng.html">eng</a>
+                </li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+                <button class="navbar-toggler custom-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="custom-navbar-toggler-icon navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link custom-nav-link" href="mathmagic.html">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link custom-nav-link" href="aboutus.html">О нас <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle custom-nav-link" href="course.html" id="customNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Курсы
+                            </a>
+                            <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="customNavbarDropdown">
+                                <a class="dropdown-item custom-dropdown-item" href="ent.html">Школьная математика(ЕНТ)</a>
+                                <a class="dropdown-item custom-dropdown-item" href="calc1.html">Математический анализ 1</a>
+                                <a class="dropdown-item custom-dropdown-item" href="calc2.html">Математический анализ 2</a>
+                                <a class="dropdown-item custom-dropdown-item" href="lin.html">Линейная алгебра</a>
+                                <a class="dropdown-item custom-dropdown-item" href="dis.html">Дискретная математика</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="reg.html">Зарегистрироваться на курс</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-5 pt-5">
+        <h1 class="logo"><a href="mathmagic.html">MathMagic</a></h1>
+        <h1 class="title">Линейная алгебра</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="course-description">
+                    Курс <b>"Линейная алгебра"</b> предназначен для студентов математических, технических и естественнонаучных специальностей. Программа охватывает основные понятия и методы линейной алгебры, которые являются фундаментом для многих областей математики и ее приложений. Основная цель курса – дать студентам прочные знания и навыки работы с линейными структурами, которые необходимы для решения практических задач в различных областях науки и техники.
+                </p>
+                <p class="course-content">Содержание курса</p>
+                <div class="content-box" data-toggle="collapse" data-target="#intro">Введение</div>
+                <div id="intro" class="collapse">
+                    <p class="collapse-content">- Введение в линейную алгебру.<br>- Основные понятия: скаляр, вектор, матрица.<br>- Области применения линейной алгебры.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#vectors">Векторы и векторные пространства</div>
+                <div id="vectors" class="collapse">
+                    <p class="collapse-content">- Векторы и операции над ними.<br>- Линейные комбинации, линейная зависимость и независимость.<br>- Базисы и размерности.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#matrices">Матрицы</div>
+                <div id="matrices" class="collapse">
+                    <p class="collapse-content">- Основные операции над матрицами.<br>- Типы матриц: квадратные, нулевая, единичная, диагональная.<br>- Транспонирование матриц.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#determinants">Определители</div>
+                <div id="determinants" class="collapse">
+                    <p class="collapse-content">- Определитель матрицы: понятие и свойства.<br>- Метод вычисления определителей.<br>- Миноры и алгебраические дополнения.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#inverse-matrices">Обратные матрицы</div>
+                <div id="inverse-matrices" class="collapse">
+                    <p class="collapse-content">- Обратная матрица: определение и свойства.<br>- Метод Гаусса-Жордана для нахождения обратной матрицы.<br>- Применение обратных матриц.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#linear-systems">Системы линейных уравнений</div>
+                <div id="linear-systems" class="collapse">
+                    <p class="collapse-content">- Решение систем линейных уравнений.<br>- Метод Гаусса.<br>- Матричный метод решения систем уравнений.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#matrix-rank">Ранг матрицы</div>
+                <div id="matrix-rank" class="collapse">
+                    <p class="collapse-content">- Ранг матрицы: определение и свойства.<br>- Методы нахождения ранга матрицы.<br>- Применение ранга для анализа систем уравнений.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#linear-transformations">Линейные преобразования</div>
+                <div id="linear-transformations" class="collapse">
+                    <p class="collapse-content">- Линейные преобразования: понятие и примеры.<br>- Матрицы линейных преобразований.<br>- Композиция линейных преобразований.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#euclidean-spaces">Евклидовы пространства</div>
+                <div id="euclidean-spaces" class="collapse">
+                    <p class="collapse-content">- Евклидово пространство: определение и свойства.<br>- Скалярное произведение.<br>- Ортогональность и ортонормированные базисы.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#eigenvalues">Собственные числа и собственные векторы</div>
+                <div id="eigenvalues" class="collapse">
+                    <p class="collapse-content">- Собственные числа и собственные векторы: определение.<br>- Метод нахождения собственных чисел и собственных векторов.<br>- Диагонализация матриц.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#orthogonal-transformations">Ортогональные преобразования</div>
+                <div id="orthogonal-transformations" class="collapse">
+                    <p class="collapse-content">- Ортогональные и унитарные матрицы.<br>- Свойства ортогональных преобразований.<br>- Применение ортогональных преобразований.</p>
+                </div>
+                <div class="content-box" data-toggle="collapse" data-target="#review">Повторение и подготовка к экзамену</div>
+                <div id="review" class="collapse">
+                    <p class="collapse-content">- Обзор ключевых концепций.<br>- Решение типовых задач.<br>- Ответы на вопросы студентов.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-box">
+                    <p><b>Планирование занятий</b>
+                        <br>- Регулярные занятия (2-3 раза в неделю)
+                        <br>- Домашние задания для закрепления материала
+                        <br>- Проведение пробных тестов в конце каждого модуля
+                    </p>
+                    <p><b>Формат обучения:</b>
+                        <br>- Лекции с теоретическим материалом.
+                        <br>- Практические занятия с решением задач.
+                        <br>- Домашние задания для самостоятельной работы.
+                        <br>- Контрольные работы и тесты для проверки усвоения материала.
+                        <br>- Индивидуальные консультации с преподавателем.
+                    </p>
+                    <p><b>Результаты обучения:</b>
+                        <br>- Студенты освоят базовые понятия и методы линейной алгебры.
+                        <br>- Научатся решать системы линейных уравнений и применять матричные методы.
+                        <br>- Будут способны проводить операции с векторами и матрицами.
+                        <br>- Смогут применять теоретические знания к решению прикладных задач в различных областях науки и техники.
+                    </p>
+                    <a href="reg.html" class="btn btn-primary">Зарегистрироваться</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-logo">MathMagic</h2>
+                    <p>Контакты</p>
+                    <p>87066435627</p>
+                    <p>87066435628</p>
+                    <p><a href="mailto:MathMagic@gmail.com">MathMagic@gmail.com</a></p>
+                    <p>Город Астана</p>
+                    <p>Кабанбай батыра 60а/1</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Миссия курса</h2>
+                    <p>Вдохновить студентов на исследование и понимание удивительного мира математики через качественное обучение и практику</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Время работы</h2>
+                    <p>ПН: 9:00 - 20:00</p>
+                    <p>ВТ: 9:00 - 20:00</p>
+                    <p>СР: 9:00 - 20:00</p>
+                    <p>ЧТ: 9:00 - 20:00</p>
+                    <p>ПТ: 9:00 - 20:00</p>
+                    <p>СБ: 10:00 - 18:00</p>
+                    <p>ВС: Выходной</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

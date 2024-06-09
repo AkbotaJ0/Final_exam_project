@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathMagic</title>
+    <link rel="icon" href="../image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/math.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="../js/math.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link active" href="mathmagickaz.html">қаз</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="mathmagic.html">рус</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mathmagiceng.html">eng</a>
+                </li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+                <button class="navbar-toggler custom-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="custom-navbar-toggler-icon navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link custom-nav-link" href="aboutuskaz.html">Біз туралы <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle custom-nav-link" href="course.html" id="customNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Курстар
+                      </a>
+                      <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="customNavbarDropdown">
+                        <a class="dropdown-item custom-dropdown-item" href="entkaz.html">Мектеп математикасы (ЕНТ)</a>
+                        <a class="dropdown-item custom-dropdown-item" href="calc1kaz.html">Математикалық талдау 1</a>
+                        <a class="dropdown-item custom-dropdown-item" href="calc2kaz.html">Математикалық талдау 2</a>
+                        <a class="dropdown-item custom-dropdown-item" href="linkaz.html">Сызықтық алгебра</a>
+                        <a class="dropdown-item custom-dropdown-item" href="diskaz.html">Дискретті математика</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link custom-nav-link" href="regkaz.html">Курсқа тіркелу</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="logo"><a href="mathmagic.html">MathMagic</a></h1>
+        <section class="info">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-block" onclick="toggleText('text1')">Тәжірибе және біліктілік</div>
+                    <div id="text1" class="text hidden">Біздің оқытушыларымыз өз салаларының нағыз мамандары. Олар тек жоғары академиялық біліктілікке ие болып қана қоймай, сонымен қатар математикалық тұжырымдамаларды терең түсінеді. Олардың тәжірибесі мен оқытуға деген құштарлығы оқу процесін тартымды әрі өнімді етеді.</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-block" onclick="toggleText('text2')">Жеке көзқарас</div>
+                    <div id="text2" class="text hidden">Біз әрбір студенттің бірегей екеніне сенеміз, сондықтан әрқайсысы үшін жеке оқу тәжірибесін жасауға тырысамыз. Біздің командамыз сіздің қажеттіліктеріңізге сәйкес материалдар мен оқыту әдістерін бейімдеу үшін жұмыс істейді, сіздің әлеуетіңізді толық ашуға көмектеседі.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-block" onclick="toggleText('text3')">Кең ауқымды курстар</div>
+                    <div id="text3" class="text hidden">Негізгі тұжырымдамалардан бастап күрделі тақырыптарға дейін бізде әр деңгей мен қызығушылыққа арналған курс бар. Сіз біздің алуан түрлі курстар тізімінен өз мақсаттарыңыз бен қажеттіліктеріңізге сай келетін курсты таңдай аласыз.</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-block" onclick="toggleText('text4')">Практикалық тапсырмалар</div>
+                    <div id="text4" class="text hidden">Біздің сабақтарымыз жалықтыратын дәрістерден алыс. Біз сізге материалды түсінуге ғана емес, оны іс жүзінде қолдануға көмектесетін интерактивті сабақтар мен практикалық тапсырмаларды ұсынамыз. Бұл сіздің біліміңізді нығайтуға және дағдыларыңызға сенімділік дамытуға көмектеседі.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-block" onclick="toggleText('text5')">Икемді оқу кестесі</div>
+                    <div id="text5" class="text hidden">Әркімнің өз міндеттері мен жағдайлары бар екенін түсінеміз. Сондықтан біз сізге ыңғайлы уақытта математика пәнін оқуға мүмкіндік беретін икемді оқу кестесін ұсынамыз.</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-block" onclick="toggleText('text6')">Қолжетімді бағалар</div>
+                    <div id="text6" class="text hidden">Математика пәнін оқу барлығына қолжетімді болуы керек. Біз сіздің оқу тәжірибеңізді одан да жағымды және тиімді ету үшін бәсекеге қабілетті бағалар мен арнайы ұсыныстар ұсынамыз.</div>
+                </div>
+            </div>
+        </section>
+        <h2 class="results-title">Нәтижелер</h2>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/rus11.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/rus22.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/rus33.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/rus44.png" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/rus555.png" alt="Fifth slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <hr class="custom-line">
+        
+        <section class="consultation">
+            <img src="../images/фон1.png" class="consultation-image">
+            <div class="consultation-text">
+                <h2 class="consultation-title">Консультация</h2>
+                <p class="consultation-subtitle">Курсты таңдау</p>
+                <p class="consultation-contact">87009803406</p>
+                <p class="consultation-contact">courseMath@gmail.com</p>
+                <p class="consultation-subtitle">Оқыту және нәтижелер</p>
+                <p class="consultation-contact">87066435628</p>
+                <p class="consultation-contact">studyMath@gmail.com</p>
+                <p class="consultation-subtitle">Платформаға қол жеткізу</п>
+                <p class="consultation-contact">87066435628</p>
+                <p class="consultation-contact">helpMath@gmail.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-logo">MathMagic</h2>
+                    <p>Байланыс</p>
+                    <p>87066435627</p>
+                    <p>87066435628</p>
+                    <p><a href="mailto:MathMagic@gmail.com">MathMagic@gmail.com</a></p>
+                    <p>Астана қаласы</p>
+                    <p>Кабанбай батыр 60а/1</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Курс миссиясы</h2>
+                    <p>Студенттерді сапалы білім мен тәжірибе арқылы математиканың керемет әлемін зерттеуге және түсінуге шабыттандыру</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Жұмыс уақыты</h2>
+                    <p>Дүйсенбі: 9:00 - 20:00</p>
+                    <p>Сейсенбі: 9:00 - 20:00</п>
+                    <p>Сәрсенбі: 9:00 - 20:00</p>
+                    <p>Бейсенбі: 9:00 - 20:00</п>
+                    <p>Жұма: 9:00 - 20:00</п>
+                    <p>Сенбі: 10:00 - 18:00</п>
+                    <p>Жексенбі: Жабық</п>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

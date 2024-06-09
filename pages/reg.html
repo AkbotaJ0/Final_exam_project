@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="../image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="../js/reg.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="regkaz.html">қаз</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="reg.html">рус</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="regeng.html">eng</a>
+                </li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+                <button class="navbar-toggler custom-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="custom-navbar-toggler-icon navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link custom-nav-link" href="mathmagic.html">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link custom-nav-link" href="aboutus.html">О нас <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle custom-nav-link" href="course.html" id="customNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Курсы
+                            </a>
+                            <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="customNavbarDropdown">
+                                <a class="dropdown-item custom-dropdown-item" href="ent.html">Школьная математика(ЕНТ)</a>
+                                <a class="dropdown-item custom-dropdown-item" href="calc1.html">Математический анализ 1</a>
+                                <a class="dropdown-item custom-dropdown-item" href="calc2.html">Математический анализ 2</a>
+                                <a class="dropdown-item custom-dropdown-item" href="lin.html">Линейная математика</a>
+                                <a class="dropdown-item custom-dropdown-item" href="dis.html">Дискретная математика</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="quiz.html">Пройти тест</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-5 pt-5">
+        <h1 class="logo"><a href="mathmagic.html">MathMagic</a></h1>
+        <h1 class="title">Регистрация на курс</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="successMessage" class="alert alert-success" role="alert" style="display: none;">
+                    Успешно зарегистрировано! Наши менеджеры свяжутся с вами в ближайшее время.
+                </div>
+                <div class="registration-form-container">
+                    <form id="registrationForm" class="registration-form">
+                        <div class="form-group">
+                            <label for="firstName">Имя</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Фамилия</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Возраст</label>
+                            <input type="number" class="form-control" id="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Язык</label>
+                            <select class="form-control" id="language" required>
+                                <option value="қазақша">қазақша</option>
+                                <option value="русский">русский</option>
+                                <option value="english">english</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Роль</label>
+                            <select class="form-control" id="role" required>
+                                <option value="parent">Родитель</option>
+                                <option value="schoolchild">Школьник</option>
+                                <option value="student">Студент</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Курс</label>
+                            <select class="form-control" id="course" required>
+                                <option value="Школьная математика: подготовка к ЕНТ">Школьная математика: подготовка к ЕНТ</option>
+                                <option value="Математический анализ 1">Математический анализ 1</option>
+                                <option value="Математический анализ 2">Математический анализ 2</option>
+                                <option value="Линейная алгебра">Линейная алгебра</option>
+                                <option value="Дискретная математика">Дискретная математика</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Номер телефона</label>
+                            <input type="tel" class="form-control" id="phoneNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMethod">Способ связи</label>
+                            <select class="form-control" id="contactMethod" required>
+                                <option value="call">Позвонить</option>
+                                <option value="write">Написать</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="messengerOptions" style="display: none;">
+                            <label for="messenger">Выберите мессенджер</label>
+                            <select class="form-control" id="messenger">
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="telegram">Telegram</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="whatsappNumber" style="display: none;">
+                            <label for="whatsapp">Номер WhatsApp</label>
+                            <input type="tel" class="form-control" id="whatsapp">
+                        </div>
+                        <div class="form-group" id="telegramUsername" style="display: none;">
+                            <label for="telegram">Ник в Telegram</label>
+                            <input type="text" class="form-control" id="telegram">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="../image/reg.png" alt="Registration Image" class="img-fluid" id="registrationImage">
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="footer-content container">
+            <div class="row">
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-logo">MathMagic</h2>
+                    <p>Контакты</p>
+                    <p>87066435627</p>
+                    <p>87066435628</p>
+                    <p><a href="mailto:MathMagic@gmail.com">MathMagic@gmail.com</a></p>
+                    <p>Город Астана</p>
+                    <p>Кабанбай батыра 60а/1</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Миссия курса</h2>
+                    <p>Вдохновить студентов на исследование и понимание удивительного мира математики через качественное обучение и практику</p>
+                </div>
+                <div class="footer-column col-md-4">
+                    <h2 class="footer-title">Время работы</h2>
+                    <p>ПН: 9:00 - 20:00</p>
+                    <p>ВТ: 9:00 - 20:00</п>
+                    <п>СР: 9:00 - 20:00</п>
+                    <п>ЧТ: 9:00 - 20:00</п>
+                    <п>ПТ: 9:00 - 20:00</п>
+                    <п>СБ: 10:00 - 18:00</п>
+                    <п>ВС: Выходной</п>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
